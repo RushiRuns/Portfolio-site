@@ -1,3 +1,7 @@
-.ssss {
-  color: red;
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.heading {
+  font-family: "DM Serif Display", serif;
 }
