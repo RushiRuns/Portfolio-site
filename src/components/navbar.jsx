@@ -1,25 +1,66 @@
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+
 function Navbar() {
+  const [isMenuOpen, setIsMenuOpen] = useState("closed");
+  const [isOverlayOpen, setIsOverlayOpen] = useState("");
+
+  function removeOverlay() {
+    let menu = "dsp-none";
+    setIsOverlayOpen(menu);
+  }
+
+  function openMenu() {
+    let menu = "open";
+    setIsMenuOpen(menu);
+    console.log("works");
+  }
+
+  function closeMenu() {
+    let menu = "closed";
+    setIsMenuOpen(menu);
+  }
+
   return (
-    <header className=" shadow">
-      <nav className=" flex flex-row justify-between p-4">
-        <a href="#" className=" heading">
-          Rushikesh Aundhakar
+    <header className=" p-5 flex justify-between shadow ">
+      <a href="#" className=" heading">
+        Rushikesh Aundhakar
+      </a>
+      <Menu className=" cursor-pointer icon-dlt" onClick={openMenu} />
+      <nav className={`space-x-5 ${isMenuOpen} navbar`}>
+        <X className=" self-end m-4 icon-dlt" onClick={closeMenu} />
+        <a
+          href="#"
+          className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+        >
+          About Me
         </a>
-        <ul className=" flex flex-row space-x-3">
-          <li className=" hover:underline underline-offset-4 decoration-[1.5px]">
-            About
-          </li>
-          <li className=" hover:underline underline-offset-4 decoration-[1.5px]">
-            Skills
-          </li>
-          <li className=" hover:underline underline-offset-4 decoration-[1.5px]">
-            Education
-          </li>
-          <li className=" hover:underline underline-offset-4 decoration-[1.5px]">
-            Projects
-          </li>
-        </ul>
+        <a
+          href="#"
+          className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+        >
+          Education
+        </a>
+        <a
+          href="#"
+          className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+        >
+          Skills
+        </a>
+        <a
+          href="#"
+          className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+        >
+          Projects
+        </a>
+        <a
+          href="#"
+          className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+        >
+          Contact Me
+        </a>
       </nav>
+      <div id="overlay" className={isOverlayOpen} onClick={removeOverlay}></div>
     </header>
   );
 }
