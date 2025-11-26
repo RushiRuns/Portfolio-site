@@ -93,3 +93,9 @@ body {
     display: none;
   }
 }
+
+/* hero section */
+
+.hero-btn-bg {
+  background-color: #77a7eed5;
+}
