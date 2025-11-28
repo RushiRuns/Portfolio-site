@@ -1,9 +1,5 @@
 /* utility classes */
 
-.heading {
-  font-family: "DM Serif Display", serif;
-}
-
 .dsp-none {
   display: none;
 }
@@ -15,10 +11,11 @@
 /* element selectors */
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "DM Serif Display", serif;
 }
 
 /* classes */
+/* navbar */
 
 .navbar {
   display: flex;
@@ -58,15 +55,15 @@ body {
   -o-transform: translateX(500px);
 }
 
-#overlay {
+.overlay--open {
   background-color: rgb(0, 0, 0, 0.5);
   position: fixed;
   inset: 0;
   z-index: 9;
 }
 
-.navbar.open ~ #overlay {
-  display: block;
+.overlay--closed {
+  display: none;
 }
 
 @media (min-width: 730px) {
@@ -85,7 +82,7 @@ body {
     -o-transform: translateX(0);
   }
 
-  #overlay {
+  .overlay {
     display: none;
   }
 
