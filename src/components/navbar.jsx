@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { useState } from 'react';
+import { Menu, X } from 'lucide-react';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,49 +10,56 @@ function Navbar() {
 
   return (
     <div>
-      <header className=" p-5 flex justify-between shadow ">
-        <a href="#">Rushikesh Aundhakar</a>
-        <Menu className=" cursor-pointer icon-dlt" onClick={isMenu} />
-        <nav className={`space-x-5 navbar ${isMenuOpen ? "open" : "closed"}`}>
+      <header className=" p-5 flex justify-between fixed w-full z-21 bg-[#fafaf8] items-center ">
+        <a href="/" className=" heading-font text-xl">
+          ※ Rushikesh Aundhakar
+        </a>
+        <Menu
+          className=" cursor-pointer icon-dlt clr-secondary hover-link"
+          onClick={isMenu}
+        />
+        <nav
+          className={`space-x-5 navbar bg-[#fafaf8] ${
+            isMenuOpen ? 'open' : 'closed'
+          }`}
+        >
           <X
-            className=" self-end m-4 icon-dlt cursor-pointer"
+            className=" self-end m-4 icon-dlt cursor-pointer clr-secondary hover-link"
             onClick={isMenu}
           />
           <a
-            href="#"
-            className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+            href="#about-me"
+            className="  cursor-pointer nav-link py-4 uppercase body-font clr-secondary hover-link"
+            onClick={isMenu}
           >
             About Me
           </a>
           <a
-            href="#"
-            className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+            href="#education"
+            className="  cursor-pointer nav-link py-4 uppercase body-font clr-secondary hover-link"
+            onClick={isMenu}
           >
             Education
           </a>
           <a
-            href="#"
-            className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
-          >
-            Skills
-          </a>
-          <a
-            href="#"
-            className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+            href="#projects"
+            className="  cursor-pointer nav-link py-4 uppercase body-font clr-secondary hover-link"
+            onClick={isMenu}
           >
             Projects
           </a>
           <a
-            href="#"
-            className=" hover:underline underline-offset-4 decoration-[.0938rem] cursor-pointer py-4"
+            href="#contacts"
+            className="  cursor-pointer nav-link py-4 uppercase body-font clr-secondary hover-link"
+            onClick={isMenu}
           >
             Contact Me
           </a>
         </nav>
       </header>
       <div
-        className={`overlay ${
-          isMenuOpen ? "overlay--open" : "overlay--closed"
+        className={`overlay bg-black/20 backdrop-blur-sm  ${
+          isMenuOpen ? 'overlay--open' : 'overlay--closed'
         } `}
         onClick={isMenu}
       ></div>

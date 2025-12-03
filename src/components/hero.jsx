@@ -1,32 +1,38 @@
-import { Download } from "lucide-react";
+import { Download, MoveRight } from 'lucide-react';
 
 function Hero() {
   return (
-    <div>
-      <section className=" h-[80vh] flex flex-col justify-center items-center text-center gap-6 ">
-        <header>
-          <h1 className=" text-[3.815rem] lg:text-[5.61rem] leading-20">
-            Building minimal digital experiences
-          </h1>
-          <p className=" text-[1rem]">
-            I build digital interfaces that prioritize content, accessibility,
-            and precision
-          </p>
-        </header>
-        <div className=" flex space-x-2">
-          <button
-            className="text-lg font-medium transition-colors hover:text-slate-100 capitalize
-              text-blue-900 hero-btn-bg py-1 px-3 rounded-[5px]"
+    <section className="  px-6 md:px-12 mb-32 ">
+      <div className=" container max-w-5xl mx-auto border-l border-stone-200 pl-8 md:pl-16 py-12">
+        <h1 className=" text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-10">
+          Building minimal
+          <br />
+          <span className="italic">digital experiences</span>.
+        </h1>
+
+        <p className=" text-lg md:text-xl max-w-xl leading-relaxed mb-12 body-font clr-secondary">
+          I build websites that prioritize simplicity, efficiency, and
+          responsiveness.
+        </p>
+
+        <div className=" flex flex-col md:flex-row w-full gap-6 justify-items-start body-font">
+          <a
+            href="#projects"
+            className="group flex items-center gap-3 text-sm font-sans uppercase tracking-widest clr-secondary hover-link "
           >
             View projects
-          </button>
-          <button className=" flex items-center">
+            <MoveRight className=" h-4 w-4 transition-transform group-hover:translate-x-2" />
+          </a>
+          <a
+            href="#"
+            className=" flex items-center gap-3 text-sm font-sans uppercase tracking-widest clr-secondary-mod clr-secondary hover-link "
+          >
             RESUME
-            <Download className=" ml-2 w-5" />
-          </button>
+            <Download className=" h-4 w-4" />
+          </a>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   );
 }
 

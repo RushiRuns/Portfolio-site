@@ -1,3 +1,38 @@
+/* variables */
+
+:root {
+  --clr-primary: #1c1917;
+  --clr-secondary: #57534d;
+  --clr-secondary-mod: #a6a09b;
+  --clr-accent: #1c1917;
+
+  --h1-sm: 3rem;
+  --h2-sm: 1.875rem;
+  --h3-sm: 1.25rem;
+  --p-sm: 1.125rem;
+
+  --h1-md: 4.5rem;
+  --h2-md: 2.25rem;
+  --h3-md: 1.25rem;
+  --p-md: 1.125rem;
+
+  --h1-lg: 5.75rem;
+  --h2-lg: 2.25rem;
+  --h3-lg: 1.25rem;
+  --p-lg: 1.125rem;
+
+  --heading-font: ui-serif, Georgia, Cambria, 'Times New Roman', Times, serif;
+  --body-font:
+    system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+::selection {
+  background-color: #e7e5e4;
+  color: var(--clr-primary);
+}
+
 /* utility classes */
 
 .dsp-none {
@@ -8,10 +43,56 @@
   display: block;
 }
 
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+.clr-primary {
+  color: var(--clr-primary);
+}
+
+.clr-secondary {
+  color: var(--clr-secondary);
+}
+
+.clr-secondary-mod {
+  color: var(--clr-secondary-mod);
+}
+
+.hover-link {
+  transition: color ease-out 0.1s;
+  -webkit-transition: color ease-out 0.1s;
+  -moz-transition: color ease-out 0.1s;
+  -ms-transition: color ease-out 0.1s;
+  -o-transition: color ease-out 0.1s;
+}
+
+.hover-link:hover {
+  color: var(--clr-primary);
+}
+
 /* element selectors */
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: "DM Serif Display", serif;
+  font-family: var(--body-font);
+  color: var(--clr-primary);
+  background-color: #fafaf9;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--clr-primary);
+  font-family: var(--heading-font);
+}
+
+span,
+a {
+  color: var(--clr-secondary);
 }
 
 /* classes */
@@ -25,9 +106,8 @@ body {
   right: 0;
   height: 100vh;
   width: min(60%, 300px);
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+  box-shadow: 0 0 10sx rgba(0, 0, 0, 0.1);
+  z-index: 50;
   transition: transform 0.3s ease-in-out;
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition: transform 0.3s ease-in-out;
@@ -35,8 +115,13 @@ body {
   -o-transition: transform 0.3s ease-in-out;
 }
 
-.navbar a {
+.nav-link {
   padding-inline: 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 1.4px;
+  text-decoration-color: #57534d;
+  -moz-text-decoration-color: #57534d;
 }
 
 .open {
@@ -56,10 +141,9 @@ body {
 }
 
 .overlay--open {
-  background-color: rgb(0, 0, 0, 0.5);
   position: fixed;
   inset: 0;
-  z-index: 9;
+  z-index: 20;
 }
 
 .overlay--closed {
@@ -72,7 +156,6 @@ body {
     position: static;
     height: auto;
     width: auto;
-    background-color: rgb(255, 255, 255);
     box-shadow: none;
     z-index: 0;
     transform: translateX(0);
@@ -93,6 +176,6 @@ body {
 
 /* hero section */
 
-.hero-btn-bg {
-  background-color: #77a7eed5;
+.aboutMe-heading {
+  font-family: var(--body-font);
 }
