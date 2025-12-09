@@ -4,7 +4,7 @@
   --clr-primary: #1c1917;
   --clr-secondary: #57534d;
   --clr-secondary-mod: #a6a09b;
-  --clr-accent: #1c1917;
+  --clr-accent: #3a5eab;
 
   --h1-sm: 3rem;
   --h2-sm: 1.875rem;
@@ -178,4 +178,22 @@ a {
 
 .aboutMe-heading {
   font-family: var(--body-font);
+}
+
+/* contact section*/
+
+.contact-btn {
+  background-color: var(--clr-accent);
+  color: #fafaf9;
+  text-transform: uppercase;
+  transition: background-color ease 0.2s;
+  -webkit-transition: background-color ease 0.2s;
+  -moz-transition: background-color ease 0.2s;
+  -ms-transition: background-color ease 0.2s;
+  -o-transition: background-color ease 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #5673b7;
+  color: #fafaf9;
 }
