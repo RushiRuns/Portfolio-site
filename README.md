@@ -20,7 +20,7 @@ It is site that showcases my technical skills and job related information
 
 ## Folder
 
-- `src/assets` - images and icons
+- `src/assets` - images, icons and docs
 - `src/components` - reusable UI
 
 ## Features (MVP)
@@ -35,10 +35,12 @@ It is site that showcases my technical skills and job related information
 2. npm install
 3. npm run dev
 
-## Screenshots / GIFs
-
 ## future work
 
 - Dark mode
 - Toggle for light and dark mode
 - Contact form
+
+# Link:
+
+https://portfolio-site-blond-ten-51.vercel.app/

@@ -16,7 +16,11 @@ function Projects() {
               </span>
               <h3 className="mb-4 text-2xl">PortFolio website</h3>
               <div className=" flex gap-4">
-                <a href="https://github.com/RushiRuns/Portfolio-site">
+                <a
+                  href="https://github.com/RushiRuns/Portfolio-site"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -33,7 +37,11 @@ function Projects() {
                     <path d="M9 18c-4.51 2-5-2-7-2" />
                   </svg>
                 </a>
-                <a href="#">
+                <a
+                  href="https://portfolio-site-blond-ten-51.vercel.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
