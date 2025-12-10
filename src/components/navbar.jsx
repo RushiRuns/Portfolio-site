@@ -19,7 +19,7 @@ function Navbar() {
           onClick={isMenu}
         />
         <nav
-          className={`space-x-4 navbar bg-[#fafaf8] ${
+          className={` space-x-0 md:space-x-4 navbar bg-[#fafaf8] ${
             isMenuOpen ? 'open' : 'closed'
           }`}
         >
@@ -53,7 +53,7 @@ function Navbar() {
             className="  cursor-pointer nav-link py-4 uppercase body-font clr-secondary hover-link hover:underline underline-offset-8 decoration-[1.3px]"
             onClick={isMenu}
           >
-            Contact Me
+            Contacts
           </a>
         </nav>
       </header>
