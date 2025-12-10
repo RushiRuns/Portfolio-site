@@ -2,15 +2,15 @@ import { Download, MoveRight } from 'lucide-react';
 
 function Hero() {
   return (
-    <section className="  px-6 md:px-12 mb-32 ">
+    <section id="hero" className="  px-6 md:px-12 mb-32 scroll-mt-32">
       <div className=" container max-w-5xl mx-auto border-l border-stone-200 pl-8 md:pl-16 py-12">
-        <h1 className=" text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-10">
+        <h1 className=" text-5xl md:text-7xl lg:text-8xl leading-[1.1] mb-8">
           Building minimal
           <br />
           <span className="italic">digital experiences</span>.
         </h1>
 
-        <p className=" text-lg md:text-xl max-w-xl leading-relaxed mb-12 body-font clr-secondary">
+        <p className=" text-lg md:text-xl max-w-xl leading-relaxed mb-14 body-font clr-secondary">
           I build websites that prioritize simplicity, efficiency, and
           responsiveness.
         </p>
@@ -24,7 +24,8 @@ function Hero() {
             <MoveRight className=" h-4 w-4 transition-transform group-hover:translate-x-2" />
           </a>
           <a
-            href="#"
+            href="/src/assets/docs/Rushikesh_Aundhakar_Resume.pdf"
+            download="Rushikesh_Aundhakar_Resume.pdf"
             className=" flex items-center gap-3 text-sm font-sans uppercase tracking-widest clr-secondary-mod clr-secondary hover-link "
           >
             RESUME

@@ -6,7 +6,10 @@ function Contacts() {
         <p className=" clr-secondary max-w-md mx-auto mb-12">
           Currently looking for new opportunities in frontend development.
         </p>
-        <a className=" contact-btn px-8 py-4 text-sm tracking-widest">
+        <a
+          href="mailto:rushikeshaundhakar715@gmail.com"
+          className=" contact-btn px-8 py-4 text-sm tracking-widest"
+        >
           get in touch
         </a>
       </div>

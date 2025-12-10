@@ -86,7 +86,7 @@ function Projects() {
             </div>
           </div>
 
-          <div className="flex flex-col gap-4 md:flex-row md:gap-16 border-b border-stone-200 pb-12">
+          {/* <div className="flex flex-col gap-4 md:flex-row md:gap-16 border-b border-stone-200 pb-12">
             <div className=" md:w-1/4">
               <span className="mb-2 text-[10px] tracking-widest block">
                 FRONTEND
@@ -161,7 +161,7 @@ function Projects() {
                 </span>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

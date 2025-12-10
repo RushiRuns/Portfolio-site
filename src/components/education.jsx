@@ -15,13 +15,16 @@ function Education() {
                 2019 - 2022
               </span>
             </div>
+
             <div className=" md:w-3/4">
               <h3 className=" mb-2 text-2xl">
                 Yashwantrao chavan college of science
               </h3>
+
               <p className=" mb-4 clr-secondary heading-font text-lg">
                 B.Sc.Computer Science
               </p>
+
               <p className=" clr-secondary text-sm">
                 Focus on computer science. Graduated with Honors.
               </p>
